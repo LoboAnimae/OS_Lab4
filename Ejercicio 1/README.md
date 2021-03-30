@@ -15,3 +15,7 @@
    > (SystemTap) assists diagnosis of a performance or functional problem. Systemtap eliminates the need for the developer to go through the tedious and disruptive instrument, recompile, install, and reboot sequence that may be otherwise required to collect data.
 
 3. ## ¿Qué es una probe?
+
+   Según [Redhat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/systemtap_beginners_guide/scripts#:~:text=Once%20a%20SystemTap%20session%20is,script%20can%20have%20multiple%20probes.), una probe es un evento, y todos sus "handlers" correspondientes. Estos, colectivamente, son llamados una probe.
+
+   Un solo script puede tener varios de ellos, los cuales forman el cuerpo de la probe.
