@@ -1,0 +1,1 @@
+cmd_/home/yagdrassyl/Documents/OS_Lab4/Ejercicio2/simple.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/yagdrassyl/Documents/OS_Lab4/Ejercicio2/simple.ko /home/yagdrassyl/Documents/OS_Lab4/Ejercicio2/simple.o /home/yagdrassyl/Documents/OS_Lab4/Ejercicio2/simple.mod.o;  true
