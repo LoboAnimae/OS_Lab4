@@ -19,3 +19,13 @@
    Según [Redhat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/systemtap_beginners_guide/scripts#:~:text=Once%20a%20SystemTap%20session%20is,script%20can%20have%20multiple%20probes.), una probe es un evento, y todos sus "handlers" correspondientes. Estos, colectivamente, son llamados una probe.
 
    Un solo script puede tener varios de ellos, los cuales forman el cuerpo de la probe.
+
+4. ## ¿Cómo funciona SystemTap?
+   Según el tutorial en [SourceWare](https://sourceware.org/systemtap/tutorial.pdf), SystemTap funciona de una manera interesante:
+   - Convierte el Script en C
+   - Compila el Script de C
+   - Crea un módulo del kernel desde dicho Script
+   - Activa todos los eventos probe cuando el módulo es cargado
+   - Cuando los eventos ocurren en algún procesador, los handles de los compiladores corren
+5. ## ¿Qué es hacer profiling y qué tipo de profiling se hace en este ejercicio?
+   El profiling, según [el documento aquí demostrado](https://www.princeton.edu/~ota/disk2/1986/8606/860607.PDF), es el acto de análisis sobre un programa dinámico que toma en cuenta el espacio, el tiempo, etc. que toma una computadora para hacer algo. Puede usarse para el análisis de algoritmos, entre otros.
