@@ -14,3 +14,11 @@
    Describe que el siguiente parámetro es un directorio.
 7. ### ¿Qué hace la opción M en este Makefile?
    Describe dónde está el make necesario.
+8. ### ¿Para qué sirve dmesg?
+   Dmesg, que significa "Diagnostic Message", es un comando que imprime el mensaje del buffer dek kernel, el cual es incluye mensajes producidos por drivers de dispositivos.
+9. ### ¿Qué hace la función simple_init en su programa simple.c?
+   Es la función de entrada del módulo. Todo lo que hace es enseñar algo en consola a nivel de módulo, para dar información a partir the KERN_INFO.
+10. ### Qué hace la función simple_exit en su programa simple.c?
+    Es la función de salida del módulo. A grandes rasgos, hace lo mismo que la otra función (con otro mensaje), pero no retorna nada, ya que no necesita.
+11. ### ¿Qué poder otorga el ejecutar código de esta forma?
+    Gracias a que Linux es modular, permite que módulos accedan al src de linux y actuen como si fueran parte de él. Por ejemplo, para instalar drivers de dispositivo, se debe de instalar así.
